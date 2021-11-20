@@ -11,6 +11,11 @@
     <title>Academy Cinemas</title>
   </head>
   <body>
+    <style>
+      body {
+        background-color: tan;
+      }
+    </style>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-info">            
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,13 +64,13 @@
               <div class="col-sm">
                 <h3>Now Playing:</h3>
                 <ul class="list-group">
-                  <li class="list-group-item">
+                  <li class="list-group-item bg-dark">
                     <a class="nav-link active" href="#">Office Space</a>
                   </li>
-                  <li class="list-group-item">
+                  <li class="list-group-item bg-light">
                     <a class="nav-link active" href="#">Alien</a>
                   </li>
-                  <li class="list-group-item">
+                  <li class="list-group-item bg-dark">
                     <a class="nav-link active" href="#">Ex Machina</a>
                   </li>
                 </ul>         
@@ -128,16 +133,57 @@
 
 
           <div class="text-center">
-            <form>
-              <h1 id="deals" h1 class="text-info my-5">Sign up for movie rewards!</h1>
-              <div class="form-group">                
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                
-              </div>              
-              <button type="button" class="btn btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards!">Sign Up!</button>
-                
-            </form>
+            <div class="jumbotron jumbotron-fluid bg-dark text-center">
+              <div class="container">
+                <form>
+                <h1 id="deals" h1 class="text-info my-5">Sign up for movie rewards!</h1>              
+                <div class="form-group">                
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">                
+                </div>              
+                <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards!">Sign Up!</button>
+                </form>
+              </div>
+            </div>
           </div>
+     <!-- Button trigger modal -->
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#register">
+        Check our Movie deals!
+      </button>
 
+      <!-- Modal -->
+      <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Movie Deals</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Name</label>
+                  <input type="text" class="form-control" id="Name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Email</label>
+                  <input type="text" class="form-control" id="Email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput3">Password</label>
+                  <input type="text" class="form-control" id="Password" placeholder="Password">
+                </div>               
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--- footer-->
           <div class="container my-5">
               <ul class="nav nav-inline">
                 <li class="nav-item">
